@@ -5,6 +5,11 @@ using UnityEngine;
 public class DoodleMainMenu : MonoBehaviour
 {
     [SerializeField] private Rigidbody player;
+    private void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Respawn").GetComponent<Rigidbody>();;
+
+    }
 
     private void OnCollisionEnter(Collision collision)
     {

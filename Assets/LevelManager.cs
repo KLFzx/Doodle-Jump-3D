@@ -31,6 +31,12 @@ public class LevelManager : MonoBehaviour
         CONSTANTS.isAlive = true;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+    
+    public void ToMainMenu()
+    {
+        CONSTANTS.isAlive = true;
+        SceneManager.LoadScene(0);
+    }
 
     void Update1sec()
     {
